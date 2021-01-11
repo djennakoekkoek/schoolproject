@@ -1,0 +1,329 @@
+/* Base styles */
+body {
+	width:100%;
+	padding: 0;
+	margin:0;
+	color: #818181;
+	font-size: 24px;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: Bodoni Moda;
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 1.5em;
+}
+.logo{
+  width: 100px;
+  height: 120;
+}
+/* Styles for Menu */
+.hoofd-menu {
+	padding: .4em 1em;
+}
+.menu-section {
+	vertical-align: middle;
+}
+ul.nav_links {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background: white;
+}
+
+.nav_links li a {
+	display: block;
+	text-decoration: none;
+	padding: .6em 1em;
+	color: inherit;
+}
+
+.nav_links li a:hover {
+	background: hsl(333.8,66.7%,90%);
+}
+.hoofd-menu li a {
+    display: flex;
+    width: 100%;
+    justify-content:center;
+		align-items: center;
+}
+
+.icon {
+    flex: 0 0 1.5em;
+    font-size: 1.8em;
+}
+
+.button-text {
+    font-size: 0.8em;
+		font-family: Rajdhani;
+		text-align: center;
+}
+
+.button-text span {
+    display: block;
+    font-size: 40%;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@media screen and (min-width: 30em) {
+
+    .hoofd-menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hoofd-menu li {
+        display: flex;
+        flex: 1 0 8em;
+    }
+
+}
+/* Styles for balk */
+.green-balk {
+	font-size: 0.6em;
+	background-color: #dcfae5;
+	color:#4f4337;
+	width: 100%;
+	height: 1.5;
+	text-align: center;
+	padding: 5px;
+}
+.green-balk-ticker {
+	margin-left: 35%;
+	margin-right:35%;
+}
+.green-balk-ticker.fa {
+	font-size: 1em;
+	color: pink;
+}
+/* Styles for Pagina */
+.pagina {
+	margin:0;
+}
+article {
+  margin:0;
+}
+.article-text {
+	margin-top: 3em;
+	padding-left: 15%;
+	padding-right: 15%;
+	text-align: center;
+}
+.pagina-foto {
+	background-image: url(images/bloemtafel.jpg);
+	width: 100%;
+	height: 400px;
+	background-repeat: no-repeat;
+  background-position: center;
+	background-size:cover;
+	position: relative;
+}
+.highTea-foto {
+	background-image: url(images/highTea.jpg);
+	width: 100%;
+	height: 400px;
+	background-repeat: no-repeat;
+  background-position: center;
+	background-size:cover;
+	position: relative;
+}
+.pagina-foto > h1,.highTea-foto > h1 {
+	color: white;
+	text-shadow: 3px 3px grey;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+/* Styles for Assortiment*/
+.assortiment {
+	width: 100%;
+}
+
+.cupcakecard {
+	background: white;
+	margin-bottom: 2em;
+	padding: 1.4em;
+}
+
+
+.cupcakecard:hover {
+	box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+
+.cupcakecard h3 {
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight: normal;
+}
+
+.cupcakecard p {
+	font-size: 0.75em;
+}
+.cupcakecard>img {
+	width:90%;
+}
+
+/* Flexbox stuff */
+@media screen and (min-width: 40em) {
+    .assortiment {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: -1em;
+    }
+
+    .cupcakecard {
+        flex: 0 1 calc(50% - .5em);
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .assortiment {
+        margin-top: inherit;
+    }
+
+    .cupcakecard {
+        flex: 0 1 calc(29% - 1em);
+        margin-bottom: 2em;
+    }
+}
+/* Styles for Footer */
+
+footer {
+	font-size: 0.6em;
+	margin-top: 5em;
+	padding: .4em 1em;
+	text-align: center;
+	background: #dcfae5;
+}
+footer > nav > ul.nav_links {
+	background: #dcfae5;
+}
+/* hulp elementen */
+img.beetje-ruimte-boven {
+margin-top: 3em;
+}
+table {
+  font-size: 0.8em;
+  border-collapse: collapse;
+  width: 70%;
+	margin-left: 15%;
+	margin-top: 3em;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.zonder-bolletjes{
+	list-style-type: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 500px;
+  position: relative;
+  margin: auto;
+	margin-top: 5em;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	left: 0px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  left: 460px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
